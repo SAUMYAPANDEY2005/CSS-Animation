@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: yellow;
+    }
+    .parent1{
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        margin: 50px;
+    }
+    .parent2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        margin: 50px;
+    }
+    .parent3{
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        margin: 50px;
+    }
+    .parent4{
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        margin: 50px;
+    }
+    .box1{
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        background-color: blue;
+        animation-name: myanimation1;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        position: relative;
+    }
+    @keyframes myanimation1 {
+        0%{
+            left: 0px; top: 0px;
+            transform: skewX(35deg);
+            transform: skewY(-35deg);
+        }
+    }
+    .box2{
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        background-color: red;
+        animation-name: myanimation2;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        position: relative;
+    }
+    @keyframes myanimation2 {
+        0%{
+            left: 0px; top: 0px;
+            transform: skewY(35px);
+            transform: skewX(-35deg);
+        }
+    }
+    .box3{
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        background-color: palevioletred;
+        animation-name: myanimation3;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        position: relative;
+    }
+    @keyframes myanimation3 {
+        0%{
+            left: 0px; top: 0px;
+            transform: rotate(360deg);
+        }
+    }
+    .box4{
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        background-color: greenyellow;
+    
+    }
+     #one{
+        height: 200px;
+        animation-name: myanimation4;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        position: relative;
+        background-color: blueviolet;
+        }
+        @keyframes myanimation4 {
+        0%{
+            left: 0px; top: 0px;
+            transform: scale(.5);
+        }
+    }
+    #two{
+        animation-name: myanimation5;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        position: relative;
+        background-color: maroon;
+        width: 200px;
+        }
+        @keyframes myanimation5 {
+        0%{
+            left: 0px; top: 0px;
+            transform: scale(.5);
+        }
+    }
+    #three{
+        animation-name: myanimation6;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        position: relative;
+        background-color: green;
+        }
+        @keyframes myanimation6 {
+        0%{
+            left: 0px; top: 0px;
+            transform: rotate(360deg);
+        }
+    }
+    ol{
+        text-wrap: row;
+    }
+</style>
+<body>
+    <h1 style="text-align: center;">Try To Replicate This!!</h1>
+    <li>
+        <ol>1</ol>
+    <div class="parent1">
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+    
+    </div>
+    <ol>2</ol>
+        <div class="parent2">
+            <div class="box2"></div>
+            <div class="box2"></div>
+            <div class="box2"></div>
+        </div>
+        <ol>3</ol>
+        <div class="parent3">
+            <div class="box3"></div>
+            <div class="box3"></div>
+            <div class="box3"></div>
+        </div>
+        <ol>4</ol>
+        <div class="parent4">
+            <div class="box4" id="one"></div>
+            <div class="box4" id="two"></div>
+            <div class="box4" id="three"></div>
+        </div>
+    </li>
+</body>
+</html>
